@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="We've sent you a text with a unique code. Enter the code for premium features!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/codeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="33dp"
+        android:text="Enter Code:"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_below="@+id/titleTxt"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/codeTxt"
+        android:layout_toEndOf="@+id/codeTxt"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
